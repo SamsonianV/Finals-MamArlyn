@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Equipment Borrowing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><u>Pahiram.Co</u>   |   Equipment Borrowing System</h1>
+
+    <div class="listview">
+        <div class="listview-header">
+            <div>Borrow ID</div>
+            <div>Employee</div>
+            <div>Equipment</div>
+            <div>Borrow Date</div>
+            <div>Return Date</div>
+        </div>
+        <div id="borrowedList" class="listview-body"></div>
+    </div>
+
+    <div id="borrowForm">
+        <select id="employeeSelect"></select>
+        <select id="equipmentSelect"></select>
+        <input type="date" id="expectedReturnDate">
+        <button id="borrowBtn">Borrow Equipment</button>
+        <input id="returnId" placeholder="Borrow ID to Return">
+        <button id="returnBtn">Return Equipment</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
